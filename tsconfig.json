@@ -1,9 +1,10 @@
 {
   "extends": "astro/tsconfigs/strict",
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"],
+  "exclude": ["dist", "public/pagefind/**/*"],
   "compilerOptions": {
     "strictNullChecks": true,
+    "noEmitOnError": false,
     "baseUrl": ".",
     "paths": {
       "@*": ["./src/*"]
