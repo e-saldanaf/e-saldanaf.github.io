@@ -4,6 +4,6 @@ import mdx from "@astrojs/mdx"
 import sitemap from "@astrojs/sitemap"
 
 export default defineConfig({
-  site: "https://esaldana.github.io",
+  site: "https://e-saldanaf.github.io",
   integrations: [mdx(), sitemap()],
 })
