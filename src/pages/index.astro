@@ -27,14 +27,23 @@ const projects: CollectionEntry<"projects">[] = (
 
         <!-- Hero / Bio -->
         <section>
-          <h1 class="font-semibold text-black dark:text-white mb-4">
-            Eduardo Saldaña
-          </h1>
-          <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">
-            <Link href="https://www.linkedin.com/in/esaldanaf/" external>
-              Data Engineer · Power Platform App Maker
-            </Link>
-          </p>
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-6">
+            <img
+              src="/avatar.jpg"
+              alt="Eduardo Saldana"
+              class="rounded-full w-20 h-20 object-cover ring-2 ring-black/10 dark:ring-white/20"
+            />
+            <div>
+              <h1 class="font-semibold text-black dark:text-white mb-1">
+                Eduardo Saldaña
+              </h1>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                <Link href="https://www.linkedin.com/in/esaldanaf/" external>
+                  Data Engineer · Power Platform App Maker
+                </Link>
+              </p>
+            </div>
+          </div>
           <article class="space-y-4">
             <p>
               Data engineer and IT developer focused on automation, system
