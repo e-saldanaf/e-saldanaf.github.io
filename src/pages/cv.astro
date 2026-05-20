@@ -17,12 +17,23 @@ const meta = {
 
         <!-- Header -->
         <section>
-          <h1 class="font-semibold text-black dark:text-white mb-1">
-            Eduardo Saldaña
-          </h1>
-          <p class="text-sm text-gray-500 dark:text-gray-400">
-            Data Engineer · Power Platform App Maker · Zaragoza, Spain
-          </p>
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-6">
+            <img
+              src="/avatar.jpg"
+              alt="Eduardo Saldana"
+              class="rounded-full w-20 h-20 object-cover ring-2 ring-black/10 dark:ring-white/20"
+            />
+            <div>
+              <h1 class="font-semibold text-black dark:text-white mb-1">
+                Eduardo Saldaña
+              </h1>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                <Link href="https://www.linkedin.com/in/esaldanaf/" external>
+                  Data Engineer · Power Platform App Maker
+                </Link>
+              </p>
+            </div>
+          </div>
         </section>
 
         <!-- Work Experience -->
@@ -242,7 +253,7 @@ const meta = {
                   Vueling Data University
                 </p>
                 <p class="text-sm text-gray-500 dark:text-gray-400">
-                  Centro de Tecnologías Avanzadas (CTA Aragón) · SQL, T-SQL, Python for Data Engineering
+                  Centro de Tecnologías Avanzadas · SQL, T-SQL, Python for Data Engineering
                 </p>
               </div>
               <span class="text-sm text-gray-400 dark:text-gray-500">2023</span>
@@ -291,7 +302,7 @@ const meta = {
                 </span>
                 <p class="text-sm text-gray-500 dark:text-gray-400">Microsoft</p>
               </div>
-              <span class="text-sm text-gray-400 dark:text-gray-500">Feb 2023</span>
+              <span class="text-sm text-gray-400 dark:text-gray-500">2023</span>
             </li>
             <li class="flex flex-wrap items-start justify-between gap-y-1">
               <div>
@@ -323,7 +334,7 @@ const meta = {
             <li class="flex justify-between">
               <span>English</span>
               <span class="text-gray-500 dark:text-gray-400">
-                Full professional proficiency
+                B1Professional proficiency
               </span>
             </li>
           </ul>
