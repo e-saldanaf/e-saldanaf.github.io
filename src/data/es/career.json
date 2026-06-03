@@ -1,0 +1,42 @@
+[
+  {
+    "company": "G.team (para Vueling Airlines)",
+    "role": "Ingeniero de Datos",
+    "period": "Abr 2023 - May 2026",
+    "type": "Jornada completa · Híbrido",
+    "description": "Diseño y mantenimiento de la infraestructura de datos de Vueling, transformando datos operativos complejos en activos estratégicos. Construcción de pipelines ETL/ELT con Apache Airflow, ingesta desde APIs REST, SharePoint, SQL Server y web scraping. Implementación de observabilidad con Elasticsearch/Kibana y migración del CI/CD de Jenkins a Azure DevOps.",
+    "skills": ["Python", "Apache Airflow", "AWS Redshift", "Amazon S3", "Elasticsearch", "Azure DevOps", "SQL Server", "Scrum"]
+  },
+  {
+    "company": "SEGULA Technologies (para Michelin CEMA)",
+    "role": "Ingeniero Power Platform",
+    "period": "Sep 2022 - Mar 2023",
+    "type": "Jornada completa · Presencial",
+    "description": "Liderazgo técnico en proyectos de transformación digital en el Centro de Experiencias de Michelin (CEMA). Sustitución de formularios físicos por aplicaciones dinámicas con Power Apps, diseño de flujos con Power Automate y gestión del ciclo de vida completo del proyecto. Obtención de la certificación Microsoft PL-100 durante este periodo.",
+    "skills": ["Power Apps", "Power Automate", "SharePoint Online", "Microsoft Forms", "PL-100"]
+  },
+  {
+    "company": "EFOR Internet y Tecnología",
+    "role": "Desarrollador de Software — Power Platform",
+    "period": "Oct 2021 - Sep 2022",
+    "type": "Jornada completa · Presencial",
+    "description": "Desarrollo y mantenimiento de soluciones low-code para digitalizar procesos de negocio. Creación de aplicaciones canvas con Power Apps y Dataverse, automatizaciones con Power Automate y gestión del ciclo de vida completo desde requisitos hasta UAT.",
+    "skills": ["Power Apps", "Power Automate", "Dataverse", "SharePoint Online", "Low-Code"]
+  },
+  {
+    "company": "Grupo Oesía",
+    "role": "Desarrollador Web Junior",
+    "period": "Jul 2021 - Sep 2021",
+    "type": "Prácticas",
+    "description": "Apoyo en el desarrollo y mantenimiento de aplicaciones web, tanto en frontend como en backend. Resolución de incidencias y familiarización con el ciclo de vida del software en un entorno corporativo.",
+    "skills": ["Java", "Angular", "Desarrollo Web"]
+  },
+  {
+    "company": "Varias empresas",
+    "role": "RRHH, Administración y Operaciones",
+    "period": "2014 - 2019",
+    "type": "Jornada completa",
+    "description": "Antes de incorporarme al sector IT, trabajé en roles de RRHH, documentación legal y operaciones — gestionando nóminas, contratos laborales, cumplimiento de protección de datos y procesos con clientes. Esta trayectoria moldeó mi enfoque en la automatización e ingeniería de datos: centrado en resolver problemas reales de negocio.",
+    "skills": ["Gestión de RRHH", "Derecho Laboral", "Protección de Datos", "Administración"]
+  }
+]

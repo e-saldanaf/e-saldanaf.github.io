@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Mobility Zaragoza — Pipeline ETL Bizi",
+    "description": "Pipeline ETL en Python que ingesta datos en tiempo real de las estaciones de bicicleta pública de Zaragoza desde la API de Datos Abiertos del Ayuntamiento, los transforma con Pandas y los carga en PostgreSQL mediante una estrategia de upsert idempotente.",
+    "images": ["placeholder.jpeg"],
+    "tech": ["Python", "Pandas", "SQLAlchemy", "PostgreSQL", "REST API"],
+    "platforms": ["web"],
+    "link": "https://github.com/e-saldanaf/mobility-zgz",
+    "category": "Ingeniería de Datos"
+  }
+]

@@ -1,10 +1,17 @@
 ---
 import { Icon } from 'astro-icon/components';
-import localData from '../data/home.json';
 import { resolveAssetImage } from '../utils/images';
 import { Image } from 'astro:assets';
 
-//Data Definitions
+interface Props {
+  lang?: string;
+}
+
+const { lang = 'en' } = Astro.props;
+const localData = lang === 'es' 
+  ? (await import('../data/es/home.json')).default
+  : (await import('../data/en/home.json')).default;
+
 interface Social {
   name: string;
   url: string;
@@ -20,10 +27,10 @@ interface ProfileData {
   socials: Social[];
 }
 
-const isApiLive = import.meta.env.PROD; // Auto true in production
+const isApiLive = import.meta.env.PROD;
 const BASE_URL = import.meta.env.PUBLIC_API_BASE_URL;
 
-let data: ProfileData; // data as ProfileData
+let data: ProfileData;
 
 if (isApiLive && BASE_URL) {
   try {
@@ -45,7 +52,6 @@ const profileImage = await resolveAssetImage(photoUrl);
 <section id="home" class="flex flex-col items-center justify-center section-container md:pt-30 gap-1 min-h-[80vh] text-center">
   <div class="relative group mb-2 reveal-content" style="animation-delay: 100ms;">
     <div class="balloon-float w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)]">
-      <!-- Use Astro Image tag for optimization, fallback to img-->
       {profileImage ? (
         <Image
           src={profileImage}
@@ -66,7 +72,7 @@ const profileImage = await resolveAssetImage(photoUrl);
     <div class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[80px] opacity-20"></div>
   </div>
 
-    <div class="reveal-content" style="animation-delay: 200ms;">
+  <div class="reveal-content" style="animation-delay: 200ms;">
     <p class="font-body font-light text-gray leading-relaxed">
       Hello, I'm
     </p>
@@ -77,64 +83,49 @@ const profileImage = await resolveAssetImage(photoUrl);
       {name}
     </h1>
     <br>
-    <p 
-      class="text-gray font-body text-lg leading-relaxed" 
-      set:html={intro} 
+    <p
+      class="text-gray font-body text-lg leading-relaxed"
+      set:html={intro}
     />
   </div>
 
   <div class="mt-8 mb-4 reveal-content" style="animation-delay: 400ms;">
-    <a 
-      href={resumeUrl} 
-      target="_blank" 
+    <a
+      href={resumeUrl}
+      target="_blank"
       rel="noopener noreferrer"
-      class="group relative inline-flex items-center justify-center px-10 py-2 bg-white/5 border border-white/10 rounded-full text-maintext font-body transition-all duration-300
-
-             <!-- /* Mobile: Always active */ -->
-             border-accent/50 bg-accent/10 shadow-[0_0_20px_rgba(var(--accent-rgb),0.3)]
-             
-             <!-- /* Desktop: Reset and hover */ -->
-             md:border-accent/50 md:bg-accent/10 md:shadow-none md:hover:border-accent/50 md:hover:bg-accent/10 md:hover:shadow-[0_0_20px_rgba(var(--accent-rgb),0.3)] 
-             hover:scale-105"
+      class="group relative inline-flex items-center justify-center px-10 py-2 bg-white/5 border border-white/10 rounded-full text-maintext font-body transition-all duration-300 border-accent/50 bg-accent/10 shadow-[0_0_20px_rgba(var(--accent-rgb),0.3)] md:border-accent/50 md:bg-accent/10 md:shadow-none md:hover:border-accent/50 md:hover:bg-accent/10 md:hover:shadow-[0_0_20px_rgba(var(--accent-rgb),0.3)] hover:scale-105"
     >
       <div class="flex flex-col items-center justify-center text-center">
         <span class="tracking-wide text-sm md:text-base font-medium transition-transform duration-300 md:translate-y-2 md:group-hover:translate-y-0">
           View Resume
         </span>
-        
-        <span class="text-[10px] text-subtext font-light whitespace-nowrap transition-all duration-300 
-                     /* Mobile: Always visible */
-                     opacity-100 translate-y-0 
-                     /* Desktop: Hidden until hover */
-                     md:opacity-0 md:translate-y-1 md:group-hover:opacity-100 md:group-hover:translate-y-0">
+        <span class="text-[10px] text-subtext font-light whitespace-nowrap transition-all duration-300 opacity-100 translate-y-0 md:opacity-0 md:translate-y-1 md:group-hover:opacity-100 md:group-hover:translate-y-0">
           Downloads PDF file
         </span>
       </div>
-      
       <div class="absolute inset-0 rounded-full blur-md bg-accent/20 -z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500"></div>
     </a>
-</div>
+  </div>
 
   <div class="flex gap-6 mt-4 reveal-content" style="animation-delay: 500ms;">
     {socials.filter((social) => social.url && social.url !== "#" && social.url !== "").map((social) => (
-      <a 
-        href={social.url} 
-        target="_blank" 
+      <a
+        href={social.url}
+        target="_blank"
         class="group relative flex flex-col items-center justify-center transition-all duration-300 hover:scale-110"
       >
-        <Icon 
-        name={social.icon} 
-        class="w-8 h-8 text-maintext group-hover:text-accent transition-colors duration-300" 
-      />
-
-      <span class="absolute -bottom-6 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 text-xs text-accent font-body">
-        {social.name}
-      </span>
+        <Icon
+          name={social.icon}
+          class="w-8 h-8 text-maintext group-hover:text-accent transition-colors duration-300"
+        />
+        <span class="absolute -bottom-6 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 text-xs text-accent font-body">
+          {social.name}
+        </span>
       </a>
     ))}
   </div>
 </section>
-
 
 <style is:global>
   .reveal-content {
@@ -149,10 +140,7 @@ const profileImage = await resolveAssetImage(photoUrl);
       transform: translateY(0);
     }
   }
-  
-  /* profile photo floating animation */
 
-  /* When combined, the animation rule automatically merges these transforms */
   .avatar-container {
     animation: float 5s ease-in-out infinite alternate, wobble 7s ease-in-out infinite alternate;
   }
@@ -163,20 +151,9 @@ const profileImage = await resolveAssetImage(photoUrl);
   }
 
   @keyframes floating-balloon {
-    0% {
-      transform: translate(0, 0) rotate(0deg);
-    }
-    33% {
-      /* Moves up and slightly right */
-      transform: translate(3px, -8px) rotate(1deg);
-    }
-    66% {
-      /* Drifts left and stays elevated */
-      transform: translate(-3px, -4px) rotate(-1deg);
-    }
-    100% {
-      /* Returns to start */
-      transform: translate(0, 0) rotate(0deg);
-    }
+    0% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(3px, -8px) rotate(1deg); }
+    66% { transform: translate(-3px, -4px) rotate(-1deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
   }
 </style>

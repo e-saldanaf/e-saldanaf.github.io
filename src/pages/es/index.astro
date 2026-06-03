@@ -1,0 +1,26 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/nav.astro";
+import Home from "../../components/home.astro";
+import Tech from "../../components/tech.astro";
+import Projects from "../../components/projects.astro";
+import Contact from "../../components/contact.astro";
+import Career from "../../components/career.astro";
+import localData from '../../data/es/home.json';
+
+interface ProfileData {
+  webpageTitle: string;
+}
+
+const data = localData as ProfileData;
+const { webpageTitle } = data;
+---
+
+<Layout title={webpageTitle}>
+  <Nav />
+  <Home lang="es" />
+  <Career lang="es" />
+  <Projects lang="es" />
+  <Tech lang="es" />
+  <Contact lang="es" />
+</Layout>
