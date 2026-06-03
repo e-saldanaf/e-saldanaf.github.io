@@ -1,0 +1,161 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import { SITE, SOCIALS } from "@consts";
+import ArrowCard from "@components/ArrowCard.astro";
+import Link from "@components/Link.astro";
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import { useTranslations } from "@i18n/translations";
+
+const t = useTranslations("es");
+
+const blog = (await getCollection("blog"))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, SITE.NUM_POSTS_ON_HOMEPAGE);
+
+const projects: CollectionEntry<"projects">[] = (
+  await getCollection("projects")
+)
+  .filter((project) => !project.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, SITE.NUM_PROJECTS_ON_HOMEPAGE);
+---
+
+<Layout title={t("home.title")} description={t("home.description")}>
+  <Container>
+    <aside data-pagefind-ignore>
+      <div class="space-y-16">
+
+        <!-- Hero / Bio -->
+        <section>
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-6">
+            <img
+              src="/avatar.jpg"
+              alt="Eduardo Saldaña"
+              width="80"
+              height="80"
+              class="rounded-full w-20 h-20 object-cover ring-2 ring-black/10 dark:ring-white/20"
+            />
+            <div>
+              <h1 class="font-semibold text-black dark:text-white mb-1">
+                Eduardo Saldaña
+              </h1>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                <Link href="https://www.linkedin.com/in/esaldanaf/" external>
+                  {t("home.tagline")}
+                </Link>
+              </p>
+            </div>
+          </div>
+          <article class="space-y-4">
+            <p>{t("home.bio.1")}</p>
+            <p>{t("home.bio.2")}</p>
+            <p>{t("home.bio.3")}</p>
+          </article>
+        </section>
+
+        <!-- Skills -->
+        <section class="animate space-y-4">
+          <h2 class="font-semibold text-black dark:text-white">
+            {t("home.stack")}
+          </h2>
+          <div class="not-prose flex flex-wrap gap-2">
+            {[
+              "Python", "Pandas", "BeautifulSoup", "Apache Airflow",
+              "SQL Server", "Amazon Redshift", "AWS S3", "Elasticsearch",
+              "Kibana", "Azure DevOps", "Jenkins", "REST APIs",
+              "Microsoft Power Platform", "Power BI", "Power Apps", "Scrum",
+            ].map((skill) => (
+              <span class="rounded-full border border-black/15 px-3 py-1 text-sm dark:border-white/20">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        <!-- Proyectos recientes -->
+        <section class="animate space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-y-2">
+            <h2 class="font-semibold text-black dark:text-white">
+              {t("home.projects.title")}
+            </h2>
+            <Link href="/es/projects">{t("home.projects.seeall")}</Link>
+          </div>
+          <ul class="not-prose flex flex-col gap-4">
+            {projects.length > 0 ? (
+              projects.map((project) => (
+                <li>
+                  <ArrowCard entry={project} />
+                </li>
+              ))
+            ) : (
+              <li class="text-sm text-gray-500 dark:text-gray-400">
+                {t("home.projects.empty")}
+              </li>
+            )}
+          </ul>
+        </section>
+
+        <!-- Últimas publicaciones -->
+        <section class="animate space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-y-2">
+            <h2 class="font-semibold text-black dark:text-white">
+              {t("home.blog.title")}
+            </h2>
+            <Link href="/es/blog">{t("home.blog.seeall")}</Link>
+          </div>
+          <ul class="not-prose flex flex-col gap-4">
+            {blog.length > 0 ? (
+              blog.map((post) => (
+                <li>
+                  <ArrowCard entry={post} />
+                </li>
+              ))
+            ) : (
+              <li class="text-sm text-gray-500 dark:text-gray-400">
+                {t("home.blog.empty")}
+              </li>
+            )}
+          </ul>
+        </section>
+
+        <!-- Contacto -->
+        <section class="animate space-y-4">
+          <h2 class="font-semibold text-black dark:text-white">
+            {t("home.connect.title")}
+          </h2>
+          <article>
+            <p>{t("home.connect.text")}</p>
+          </article>
+          <ul class="not-prose flex flex-wrap gap-2">
+            {
+              SOCIALS.map((SOCIAL) => (
+                <li class="flex gap-x-2 text-nowrap">
+                  <Link
+                    href={SOCIAL.HREF}
+                    external
+                    aria-label={`${SITE.TITLE} on ${SOCIAL.NAME}`}
+                  >
+                    {SOCIAL.NAME}
+                  </Link>
+                  {"/"}
+                </li>
+              ))
+            }
+            <li class="line-clamp-1">
+              <Link
+                href={`mailto:${SITE.EMAIL}`}
+                aria-label={`Email ${SITE.TITLE}`}
+              >
+                {SITE.EMAIL}
+              </Link>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </aside>
+  </Container>
+</Layout>

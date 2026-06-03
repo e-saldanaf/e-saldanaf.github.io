@@ -1,20 +1,11 @@
 [
   {
-    "title": "Awesome Website",
-    "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-01.webp", "astro-02.jpeg"],
-    "tech": ["Astro", "Tailwind"],
+    "title": "Mobility Zaragoza — Bizi ETL Pipeline",
+    "description": "Python ETL pipeline that ingests real-time public bike station data from Zaragoza's Open Data API, transforms it with Pandas and loads it into PostgreSQL using an idempotent upsert strategy.",
+    "images": ["bizi-01.jpg"],
+    "tech": ["Python", "Pandas", "SQLAlchemy", "PostgreSQL", "REST API"],
     "platforms": ["web"],
-    "link": "https://astro.build/themes/details/career-portfolio-data-driven-astro-ssg/",
-    "category": "Published Website"
-  },
-  {
-    "title": "Demo Mobile App",
-    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-02.jpeg", "#"],
-    "tech": ["Flutter", "Dart", "REST API"],
-    "platforms": ["apple-ios", "android"],
-    "link": "https://github.com/nbakh16/career-portfolio-template",
-    "category": "Hobby"
+    "link": "https://github.com/e-saldanaf/mobility-zgz",
+    "category": "Data Engineering"
   }
 ]

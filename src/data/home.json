@@ -1,23 +1,28 @@
 {
-  "name": "John Doe",
-  "photoUrl": "favicon.svg",
-  "intro": "A brief, compelling introduction about who you are and what you do. Mention your core philosophy, your passion for building digital products, and your drive for creating efficient, high-impact solutions.",
-  "introHtml": "A brief, compelling introduction about who you are and what you do. Mention your core <span class='text-white font-bold'>philosophy</span>, your passion for building digital products, and your drive for creating <span class='text-white font-bold'>efficient</span>, <span class='text-white font-bold'>high-impact</span> solutions.",
-  "webpageTitle": "John Doe",
-  "resumeUrl": "https://example-files.online-convert.com/document/pdf/example.pdf",
-
+  "name": "Eduardo Saldaña",
+  "photoUrl": "avatar.jpg",
+  "intro": "Data engineer and IT developer focused on automation, system integration and process optimization. I build practical, scalable solutions that bridge technology and business efficiently.",
+  "introHtml": "Data engineer and IT developer focused on <span class='text-white font-bold'>automation</span>, system integration and process optimization. I build <span class='text-white font-bold'>practical, scalable solutions</span> that bridge technology and business efficiently.",
+  "webpageTitle": "Eduardo Saldaña",
+  "resumeUrl": "https://e-saldanaf.github.io/cv",
   "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/[YOUR_USER_NAME]",
+      "url": "https://github.com/e-saldanaf",
       "icon": "mdi:github",
       "showInContact": true
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/[YOUR_USER_NAME]",
+      "url": "https://www.linkedin.com/in/esaldanaf/",
       "icon": "mdi:linkedin",
+      "showInContact": true
+    },
+    {
+      "name": "Email",
+      "url": "mailto:esaldanaf@gmail.com",
+      "icon": "mdi:email",
       "showInContact": true
     },
     {
@@ -33,16 +38,10 @@
       "showInContact": false
     },
     {
-      "name": "Email",
-      "url": "mailto:your-mail@example.com",
-      "icon": "mdi:email",
-      "showInContact": true
-    },
-    {
       "name": "Whatsapp",
-      "url": "https://wa.me/[YOUR_WHATSAPP_NUMBER]",
+      "url": "#",
       "icon": "mdi:whatsapp",
-      "showInContact": true
+      "showInContact": false
     },
     {
       "name": "Facebook",
@@ -54,7 +53,7 @@
       "name": "Messenger",
       "url": "#",
       "icon": "mdi:facebook-messenger",
-      "showInContact": true
+      "showInContact": false
     },
     {
       "name": "Instagram",

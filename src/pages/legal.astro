@@ -1,0 +1,63 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+
+const meta = {
+  title: "Legal Notice",
+  description: "Legal information for e-saldanaf.github.io",
+};
+---
+
+<Layout title={meta.title} description={meta.description}>
+  <Container>
+    <div class="space-y-8">
+      <h1 class="font-semibold text-black dark:text-white">Legal Notice</h1>
+
+      <section class="space-y-2">
+        <h2 class="font-semibold text-black dark:text-white">Website owner</h2>
+        <p>Eduardo Saldaña Fuertes</p>
+        <p>Zaragoza, Spain</p>
+        <p>Contact: <a href="mailto:esaldanaf@gmail.com">esaldanaf@gmail.com</a></p>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="font-semibold text-black dark:text-white">Purpose</h2>
+        <p>
+          This website is a personal portfolio intended to showcase professional
+          experience, technical projects and skills. It does not collect, store
+          or process any personal data from visitors.
+        </p>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="font-semibold text-black dark:text-white">Cookies</h2>
+        <p>
+          This website does not use cookies of any kind — neither own nor
+          third-party. No tracking or analytics tools are active.
+        </p>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="font-semibold text-black dark:text-white">Intellectual property</h2>
+        <p>
+          All content published on this website (texts, code, images) is
+          authored by Eduardo Saldaña Fuertes unless otherwise stated. Project source
+          code is available under the respective licenses indicated in each
+          repository.
+        </p>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="font-semibold text-black dark:text-white">Hosting</h2>
+        <p>
+          This website is hosted on GitHub Pages (GitHub, Inc., 88 Colin P
+          Kelly Jr St, San Francisco, CA 94107, USA). GitHub's privacy policy
+          applies to infrastructure-level data:
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">
+            GitHub Privacy Statement
+          </a>.
+        </p>
+      </section>
+    </div>
+  </Container>
+</Layout>

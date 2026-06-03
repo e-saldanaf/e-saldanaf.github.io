@@ -1,0 +1,68 @@
+---
+import Container from "@components/Container.astro";
+import Link from "@components/Link.astro";
+import { SITE } from "@consts";
+import { getLangFromUrl, useTranslations, getLocalePath } from "@i18n/translations";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+// Toggle destination: switch to the other language keeping the same path
+const currentPath = Astro.url.pathname;
+
+let toggleHref: string;
+if (lang === "en") {
+  // English → Spanish: prepend /es
+  toggleHref = currentPath === "/" ? "/es/" : `/es${currentPath}`;
+} else {
+  // Spanish → English: remove /es prefix
+  const withoutEs = currentPath.replace(/^\/es/, "");
+  toggleHref = withoutEs === "" || withoutEs === "/" ? "/" : withoutEs;
+}
+---
+
+<header>
+  <Container>
+    <div class="flex flex-wrap justify-between gap-y-2">
+      <Link href={getLocalePath(lang, "/")} underline={false}>
+        <div class="font-semibold">
+          {SITE.TITLE}
+        </div>
+      </Link>
+      <nav class="flex items-center gap-1 text-sm">
+        <Link href={getLocalePath(lang, "/blog")}>{t("nav.blog")}</Link>
+        <span>/</span>
+        <Link href={getLocalePath(lang, "/projects")}>{t("nav.projects")}</Link>
+        <span>/</span>
+        <Link href={getLocalePath(lang, "/cv")}>{t("nav.cv")}</Link>
+        <span>/</span>
+        <a
+          href={toggleHref}
+          class="flex items-center gap-1.5 rounded-sm border border-black/15 px-2 py-1 text-xs transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white"
+          aria-label="Switch language"
+        >
+          {lang === "en" ? (
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 640 480">
+              <path fill="#c60b1e" d="M0 0h640v480H0z"/>
+              <path fill="#ffc400" d="M0 120h640v240H0z"/>
+            </svg>
+            <span>ES</span>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 60 30">
+              <clipPath id="a"><path d="M0 0v30h60V0z"/></clipPath>
+              <clipPath id="b"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath>
+              <g clip-path="url(#a)">
+                <path d="M0 0v30h60V0z" fill="#012169"/>
+                <path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/>
+                <path d="M0 0l60 30m0-30L0 30" clip-path="url(#b)" stroke="#C8102E" stroke-width="4"/>
+                <path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/>
+                <path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/>
+              </g>
+            </svg>
+            <span>EN</span>
+          )}
+        </a>
+      </nav>
+    </div>
+  </Container>
+</header>

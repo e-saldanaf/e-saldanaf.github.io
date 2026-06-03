@@ -1,26 +1,42 @@
 [
   {
-    "company": "Demo Company",
-    "role": "Lead Software Engineer",
-    "period": "Oct 2025 - Present",
-    "type": "Full time job",
-    "description": "Leading cross-platform mobile development using Flutter and FastAPI. Focused on scalable system design and high-performance data processing.",
-    "skills": ["Leading", "Collaboration"]
+    "company": "G.team (for Vueling Airlines)",
+    "role": "Data Engineer",
+    "period": "Apr 2023 - May 2026",
+    "type": "Full time · Hybrid",
+    "description": "Designed and maintained data infrastructure for Vueling, transforming complex operational data into strategic assets. Built ETL/ELT pipelines with Apache Airflow, ingesting from REST APIs, SharePoint, SQL Server and web scraping. Implemented observability via Elasticsearch/Kibana and led CI/CD migration from Jenkins to Azure DevOps.",
+    "skills": ["Python", "Apache Airflow", "AWS Redshift", "Amazon S3", "Elasticsearch", "Azure DevOps", "SQL Server", "Scrum"]
   },
   {
-    "company": "Demo Company",
-    "role": "Full-stack Developer",
-    "period": "Sep 2023 - Sep 2025",
-    "type": "Full time job",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["React", "Node.js", "PostgreSQL", "Docker"]
+    "company": "SEGULA Technologies (for Michelin CEMA)",
+    "role": "Power Platform Engineer",
+    "period": "Sep 2022 - Mar 2023",
+    "type": "Full time · On-site",
+    "description": "Technical lead on digital transformation projects at Michelin's CEMA experience center. Replaced physical forms with dynamic Power Apps, designed Power Automate workflows and managed the full project lifecycle. Obtained the Microsoft PL-100 certification during this period.",
+    "skills": ["Power Apps", "Power Automate", "SharePoint Online", "Microsoft Forms", "PL-100"]
   },
   {
-    "company": "Demo University of Tech",
-    "role": "BSc in Computer Science",
-    "period": "Jun 2020 - Jun 2024",
-    "type": "Student",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["C++", "OOP", "Problem Solving"]
+    "company": "EFOR Internet y Tecnología",
+    "role": "Software Developer — Power Platform",
+    "period": "Oct 2021 - Sep 2022",
+    "type": "Full time · On-site",
+    "description": "Developed and maintained low-code solutions to digitize business processes. Built canvas applications with Power Apps and Dataverse, designed automations with Power Automate and handled full project lifecycle from requirements to UAT.",
+    "skills": ["Power Apps", "Power Automate", "Dataverse", "SharePoint Online", "Low-Code"]
+  },
+  {
+    "company": "Grupo Oesía",
+    "role": "Junior Web Developer",
+    "period": "Jul 2021 - Sep 2021",
+    "type": "Internship",
+    "description": "Supported development and maintenance of web applications covering frontend and backend. Resolved incidents and gained hands-on experience with the software development lifecycle in a corporate environment.",
+    "skills": ["Java", "Angular", "Web Development"]
+  },
+  {
+    "company": "Various companies",
+    "role": "HR, Administration & Operations",
+    "period": "2014 - 2019",
+    "type": "Full time",
+    "description": "Before moving into IT, worked across HR, legal documentation and operations roles — managing payroll, labour contracts, data protection compliance and client processes. This background shaped my approach to automation and data engineering: focused on solving real business problems.",
+    "skills": ["HR Management", "Labour Law", "Data Protection", "Administration"]
   }
 ]
