@@ -48,9 +48,15 @@ const localData = lang === 'es'
 
       <div class="contact-footer opacity-0 pt-20 border-t border-white/5">
         <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p class="text-subtext text-sm font-body order-2 md:order-1">
-            {localData.name} © 2026
-          </p>
+          <p class="text-subtext text-sm font-body order-2 md:order-1 flex items-center gap-3">
+			<span>{localData.name} © 2026</span>
+			
+				<a href={lang === 'es' ? '/es/legal' : '/legal'}
+				class="hover:text-accent transition-colors underline decoration-white/30 underline-offset-4 hover:decoration-accent"
+			>
+				{lang === 'es' ? 'Aviso Legal' : 'Legal Notice'}
+			</a>
+		  </p>
           <div class="flex items-center flex-wrap justify-center gap-3 text-subtext text-xs font-body order-1 md:order-2">
             <span>{lang === 'es' ? 'Construido con' : 'Built using'}</span>
             <a
