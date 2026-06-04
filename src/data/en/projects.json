@@ -6,6 +6,7 @@
     "tech": ["Python", "Pandas", "SQLAlchemy", "PostgreSQL", "REST API"],
     "platforms": ["web"],
     "link": "https://github.com/e-saldanaf/mobility-zgz",
+    "demoUrl": "https://bizi-zgz.streamlit.app/",
     "category": "Data Engineering"
   }
 ]
