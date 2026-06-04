@@ -42,7 +42,7 @@
         { "name": "Azure DevOps", "level": 2, "icon": "devicon-plain:azure" },
         { "name": "Jenkins", "level": 1, "icon": "devicon-plain:jenkins" },
         { "name": "Git", "level": 3, "icon": "devicon-plain:git" },
-        { "name": "SonarQube", "level": 2, "icon": "devicon-plain:sonarqube" },
+        { "name": "SonarQube", "level": 2, "icon": "mdi:shield-check" },
         { "name": "TestRail", "level": 1, "icon": "mdi:test-tube" }
       ]
     },
