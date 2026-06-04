@@ -3,18 +3,15 @@
 @import '@fontsource-variable/inter';
 
 @theme {
-  /* Base Colors - Theme used in @layer base{...} */
-  --color-background: #0F0D29;
-  --color-accent: #A78BFA;
+  --color-background: #1a1a2e;
+  --color-accent: #FFD43B;
   --color-maintext: #FFFFFF;
-  --color-subtext: #b2bed1;
-  --color-textrain: #7d7b9c;
+  --color-subtext: #b8bab0;
+  --color-textrain: #4a4830;
 
-  /* Fonts */
   --font-heading: "Space Grotesk Variable", sans-serif;
   --font-body: "Inter Variable", sans-serif;
 
-  /* Custom Animations */
   --animate-fall: fall linear forwards;
   --animate-bounce-twice: double-bounce-pause 5.6s ease-in-out infinite;
 
@@ -38,23 +35,23 @@
 }
 
 @layer base {
-  /* Default Theme - Dark */
+  /* Default Theme - Dark (Python) */
   :root,
   [data-theme="default-dark"] {
-    --color-background: #0F0D29;
-    --color-accent: #A78BFA;
+    --color-background: #1a1a2e;
+    --color-accent: #FFD43B;
     --color-maintext: #FFFFFF;
-    --color-subtext: #b2bed1;
-    --color-textrain: #7d7b9c;
+    --color-subtext: #b8bab0;
+    --color-textrain: #4a4830;
   }
 
-  /* Default Theme - Light */
+  /* Default Theme - Light (Python) */
   [data-theme="default-light"] {
-    --color-background: #F5F3FF;
-    --color-accent: #7C3AED;
-    --color-maintext: #1E1B4B;
+    --color-background: #FFFDF0;
+    --color-accent: #306998;
+    --color-maintext: #1a1a2e;
     --color-subtext: #4B5563;
-    --color-textrain: #97a7dc;
+    --color-textrain: #a8b8c8;
   }
 
   /* Strategic Architect - Dark */
@@ -111,8 +108,6 @@
     --color-textrain: #e2a787;
   }
 
-
-  /* Core Element Styles */
   *::selection {
     @apply bg-accent text-background;
   }
@@ -120,14 +115,13 @@
   body {
     @apply font-body antialiased text-maintext;
     background: linear-gradient(
-      135deg,    
+      135deg,
       color-mix(in srgb, var(--color-background), black 16%) 0%,
       var(--color-background) 50%,
       color-mix(in srgb, var(--color-background), white 16%) 100%
     );
     background-attachment: fixed;
     min-height: 100vh;
-    /*Transition for theme switching*/
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
   }
 }
@@ -141,13 +135,12 @@
     @apply absolute font-heading font-extralight select-none pointer-events-none leading-none;
     animation: fall linear forwards;
   }
-  
+
   .launching {
     animation: launch 0.5s ease-in forwards;
   }
 }
 
-/* Custom Scrollbar for a cleaner look */
 ::-webkit-scrollbar {
   width: 8px;
 }
