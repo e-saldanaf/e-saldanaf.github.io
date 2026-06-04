@@ -55,7 +55,7 @@
       "title": "Currently Learning",
       "skills": [
         { "name": "Docker", "level": 1, "icon": "devicon-plain:docker" },
-        { "name": "dbt", "level": 1, "icon": "devicon-plain:dbt" }
+        { "name": "dbt", "level": 1, "icon": "mdi:database-cog" }
       ]
     }
   ]
