@@ -3,38 +3,60 @@
     {
       "title": "Data Engineering",
       "skills": [
-        { "name": "Apache Airflow", "level": 3, "icon": "devicon-plain:apacheairflow" },
         { "name": "Python", "level": 3, "icon": "devicon-plain:python" },
         { "name": "Pandas", "level": 3, "icon": "devicon-plain:pandas" },
-        { "name": "SQL", "level": 3, "icon": "devicon-plain:mysql" }
+        { "name": "SQL", "level": 3, "icon": "devicon-plain:mysql" },
+        { "name": "Apache Airflow", "level": 3, "icon": "devicon-plain:apacheairflow" },
+        { "name": "BeautifulSoup", "level": 2, "icon": "devicon-plain:python" }
       ]
     },
     {
       "title": "Cloud & Storage",
       "skills": [
-        { "name": "AWS Redshift", "level": 3, "icon": "devicon-plain:amazonwebservices" },
-        { "name": "Amazon S3", "level": 3, "icon": "devicon-plain:amazonwebservices" },
-        { "name": "SQL Server", "level": 2, "icon": "devicon-plain:microsoftsqlserver" },
-        { "name": "PostgreSQL", "level": 3, "icon": "devicon-plain:postgresql" }
+        { "name": "AWS Redshift", "level": 3, "icon": "skill-icons:aws-dark" },
+        { "name": "Amazon S3", "level": 3, "icon": "skill-icons:aws-dark" },
+        { "name": "AWS Secrets Manager", "level": 2, "icon": "skill-icons:aws-dark" },
+        { "name": "PostgreSQL", "level": 2, "icon": "devicon-plain:postgresql" }
       ]
     },
     {
-      "title": "DevOps & Observability",
+      "title": "Databases",
+      "skills": [
+        { "name": "SQL Server", "level": 3, "icon": "devicon-plain:microsoftsqlserver" },
+        { "name": "Elasticsearch", "level": 2, "icon": "devicon-plain:elasticsearch" }
+      ]
+    },
+    {
+      "title": "Power Platform",
+      "skills": [
+        { "name": "Power Apps", "level": 3, "icon": "mdi:microsoft" },
+        { "name": "Power Automate", "level": 3, "icon": "mdi:microsoft" },
+        { "name": "Dataverse", "level": 2, "icon": "mdi:microsoft" },
+        { "name": "SharePoint Online", "level": 3, "icon": "mdi:microsoft-sharepoint" },
+        { "name": "Microsoft Forms", "level": 2, "icon": "mdi:microsoft" }
+      ]
+    },
+    {
+      "title": "DevOps & Quality",
       "skills": [
         { "name": "Azure DevOps", "level": 2, "icon": "devicon-plain:azure" },
         { "name": "Jenkins", "level": 2, "icon": "devicon-plain:jenkins" },
-        { "name": "Elasticsearch", "level": 1, "icon": "devicon-plain:elasticsearch" },
         { "name": "Git", "level": 3, "icon": "devicon-plain:git" }
       ]
     },
     {
-  "title": "Power Platform",
-  "skills": [
-    { "name": "Power Apps", "level": 2, "icon": "mdi:microsoft" },
-    { "name": "Power Automate", "level": 2, "icon": "mdi:microsoft" },
-    { "name": "Power BI", "level": 1, "icon": "mdi:chart-bar" },
-    { "name": "SharePoint", "level": 1, "icon": "mdi:microsoft-sharepoint" }
-  ]
-}
+      "title": "Methodology",
+      "skills": [
+        { "name": "Scrum", "level": 3, "icon": "mdi:account-group" },
+        { "name": "Jira", "level": 3, "icon": "devicon-plain:jira" }
+      ]
+    },
+    {
+      "title": "Currently Learning",
+      "skills": [
+        { "name": "Docker", "level": 1, "icon": "devicon-plain:docker" },
+        { "name": "dbt", "level": 1, "icon": "devicon-plain:dbt" }
+      ]
+    }
   ]
 }
