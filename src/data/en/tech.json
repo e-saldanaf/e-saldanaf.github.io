@@ -6,7 +6,7 @@
         { "name": "Python", "level": 3, "icon": "devicon-plain:python" },
         { "name": "Pandas", "level": 3, "icon": "devicon-plain:pandas" },
         { "name": "SQL", "level": 3, "icon": "devicon-plain:mysql" },
-        { "name": "Apache Airflow", "level": 3, "icon": "devicon-plain:apacheairflow" },
+        { "name": "Apache Airflow", "level": 2, "icon": "devicon-plain:apacheairflow" },
         { "name": "BeautifulSoup", "level": 2, "icon": "devicon-plain:python" }
       ]
     },
@@ -16,14 +16,14 @@
         { "name": "AWS Redshift", "level": 3, "icon": "skill-icons:aws-dark" },
         { "name": "Amazon S3", "level": 3, "icon": "skill-icons:aws-dark" },
         { "name": "AWS Secrets Manager", "level": 2, "icon": "skill-icons:aws-dark" },
-        { "name": "PostgreSQL", "level": 2, "icon": "devicon-plain:postgresql" }
+        { "name": "PostgreSQL", "level": 3, "icon": "devicon-plain:postgresql" }
       ]
     },
     {
       "title": "Databases",
       "skills": [
         { "name": "SQL Server", "level": 3, "icon": "devicon-plain:microsoftsqlserver" },
-        { "name": "Elasticsearch", "level": 2, "icon": "devicon-plain:elasticsearch" }
+        { "name": "Elasticsearch", "level": 1, "icon": "devicon-plain:elasticsearch" }
       ]
     },
     {
@@ -32,7 +32,7 @@
         { "name": "Power Apps", "level": 3, "icon": "mdi:microsoft" },
         { "name": "Power Automate", "level": 3, "icon": "mdi:microsoft" },
         { "name": "Dataverse", "level": 2, "icon": "mdi:microsoft" },
-        { "name": "SharePoint Online", "level": 3, "icon": "mdi:microsoft-sharepoint" },
+        { "name": "SharePoint Online", "level": 2, "icon": "mdi:microsoft-sharepoint" },
         { "name": "Microsoft Forms", "level": 2, "icon": "mdi:microsoft" }
       ]
     },
@@ -40,8 +40,10 @@
       "title": "DevOps & Quality",
       "skills": [
         { "name": "Azure DevOps", "level": 2, "icon": "devicon-plain:azure" },
-        { "name": "Jenkins", "level": 2, "icon": "devicon-plain:jenkins" },
-        { "name": "Git", "level": 3, "icon": "devicon-plain:git" }
+        { "name": "Jenkins", "level": 1, "icon": "devicon-plain:jenkins" },
+        { "name": "Git", "level": 3, "icon": "devicon-plain:git" },
+        { "name": "SonarQube", "level": 2, "icon": "devicon-plain:sonarqube" },
+        { "name": "TestRail", "level": 1, "icon": "mdi:test-tube" }
       ]
     },
     {
