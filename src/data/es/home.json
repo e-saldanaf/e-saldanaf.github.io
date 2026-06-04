@@ -4,7 +4,7 @@
   "intro": "Ingeniero de datos y desarrollador IT enfocado en automatización, integración de sistemas y optimización de procesos. Construyo soluciones prácticas y escalables que conectan tecnología y negocio de forma eficiente.",
   "introHtml": "Ingeniero de datos y desarrollador IT enfocado en <span class='text-white font-bold'>automatización</span>, integración de sistemas y optimización de procesos. Construyo <span class='text-white font-bold'>soluciones prácticas y escalables</span> que conectan tecnología y negocio de forma eficiente.",
   "webpageTitle": "Eduardo Saldaña",
-  "resumeUrl": "https://e-saldanaf.github.io/es/cv",
+  "resumeUrl": "/cv.pdf",
   "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
   "socials": [
     {

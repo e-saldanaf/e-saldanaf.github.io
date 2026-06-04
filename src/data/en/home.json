@@ -4,7 +4,7 @@
   "intro": "Data engineer and IT developer focused on automation, system integration and process optimization. I build practical, scalable solutions that bridge technology and business efficiently.",
   "introHtml": "Data engineer and IT developer focused on <span class='text-white font-bold'>automation</span>, system integration and process optimization. I build <span class='text-white font-bold'>practical, scalable solutions</span> that bridge technology and business efficiently.",
   "webpageTitle": "Eduardo Saldaña",
-  "resumeUrl": "https://e-saldanaf.github.io/cv",
+  "resumeUrl": "/cv.pdf",
   "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
   "socials": [
     {
