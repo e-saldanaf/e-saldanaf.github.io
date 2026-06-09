@@ -13,9 +13,9 @@
     {
       "title": "Cloud & Storage",
       "skills": [
-        { "name": "AWS Redshift", "level": 3, "icon": "skill-icons:aws-dark" },
-        { "name": "Amazon S3", "level": 3, "icon": "skill-icons:aws-dark" },
-        { "name": "AWS Secrets Manager", "level": 2, "icon": "skill-icons:aws-dark" },
+        { "name": "AWS Redshift", "level": 3, "icon": "devicon-plain:amazonwebservices" },
+        { "name": "Amazon S3", "level": 3, "icon": "devicon-plain:amazonwebservices" },
+        { "name": "AWS Secrets Manager", "level": 2, "icon": "devicon-plain:amazonwebservices" }
         { "name": "PostgreSQL", "level": 3, "icon": "devicon-plain:postgresql" }
       ]
     },
