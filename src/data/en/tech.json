@@ -42,6 +42,7 @@
         { "name": "Azure DevOps", "level": 2, "icon": "devicon-plain:azure" },
         { "name": "Jenkins", "level": 1, "icon": "devicon-plain:jenkins" },
         { "name": "Git", "level": 3, "icon": "devicon-plain:git" },
+        { "name": "Docker", "level": 1, "icon": "devicon-plain:docker" },
         { "name": "SonarQube", "level": 2, "icon": "mdi:shield-check" },
         { "name": "TestRail", "level": 1, "icon": "mdi:test-tube" }
       ]
@@ -56,8 +57,7 @@
     {
       "title": "Currently Learning",
       "skills": [
-        { "name": "Docker", "level": 1, "icon": "devicon-plain:docker" },
-        { "name": "dbt", "level": 1, "icon": "mdi:database-cog" }
+        { "name": "dbt", "level": 0, "icon": "mdi:database-cog" }
       ]
     }
   ]
