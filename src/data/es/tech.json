@@ -51,13 +51,13 @@
       "title": "Methodology",
       "skills": [
         { "name": "Scrum", "level": 3, "icon": "mdi:account-group" },
-        { "name": "Jira", "level": 3, "icon": "devicon-plain:jira" }
+        { "name": "Jira", "level": 2, "icon": "devicon-plain:jira" }
       ]
     },
     {
       "title": "Currently Learning",
       "skills": [
-        { "name": "dbt", "level": 0, "icon": "mdi:database-cog" }
+        { "name": "dbt", "level": 1, "icon": "mdi:database-cog" }
       ]
     }
   ]
