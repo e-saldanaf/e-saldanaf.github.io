@@ -8,5 +8,15 @@
     "link": "https://github.com/e-saldanaf/mobility-zgz",
     "demoUrl": "https://bizi-zgz.streamlit.app/",
     "category": "Ingeniería de Datos"
-  }
+  },
+  {
+  "title": "Mercado Eléctrico Español — Pipeline dbt end-to-end",
+  "description": "Pipeline de analítica de datos sobre el mercado eléctrico español (API ESIOS/REE), con dbt Core como protagonista. Extracción en Python con patrón MERGE idempotente, orquestación en GitHub Actions con doble scheduling (cron-job.org + fallback nativo), transformación en tres capas con dbt (staging, intermediate, marts) con 17 tests automáticos, y dashboard interactivo en Evidence.dev que visualiza el merit order effect: la correlación entre generación renovable y precio de la electricidad. Documentación y linaje de dbt: https://e-saldanaf.github.io/esios-energy-pipeline/",
+  "images": ["esios_dashboard.jpg"],
+  "tech": ["Python", "dbt", "PostgreSQL", "GitHub Actions", "Supabase", "Evidence.dev"],
+  "platforms": ["web"],
+  "link": "https://github.com/e-saldanaf/esios-energy-pipeline",
+  "demoUrl": "https://esios-energy-es.netlify.app/",
+  "category": "Ingeniería de Datos"
+}
 ]
