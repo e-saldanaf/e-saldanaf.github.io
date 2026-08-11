@@ -33,7 +33,7 @@
         { "name": "Power Apps", "level": 3, "icon": "simple-icons:powerapps" },
         { "name": "Power Automate", "level": 3, "icon": "simple-icons:powerautomate" },
         { "name": "Dataverse", "level": 2, "icon": "simple-icons:dataverse" },
-        { "name": "SharePoint Online", "level": 2, "icon": "simple-icons:sharepoint" },
+        { "name": "SharePoint Online", "level": 2, "icon": "simple-icons:microsoftsharepoint" },
         { "name": "Microsoft Forms", "level": 2, "icon": "simple-icons:microsoftforms" }
       ]
     },
