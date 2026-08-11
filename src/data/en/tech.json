@@ -30,10 +30,10 @@
     {
       "title": "Power Platform",
       "skills": [
-        { "name": "Power Apps", "level": 3, "icon": "simple-icons:microsoftpowerapps" },
-        { "name": "Power Automate", "level": 3, "icon": "simple-icons:microsoftpowerautomate" },
-        { "name": "Dataverse", "level": 2, "icon": "simple-icons:microsoftdataverse" },
-        { "name": "SharePoint Online", "level": 2, "icon": "simple-icons:microsoftsharepoint" },
+        { "name": "Power Apps", "level": 3, "icon": "simple-icons:powerapps" },
+        { "name": "Power Automate", "level": 3, "icon": "simple-icons:powerautomate" },
+        { "name": "Dataverse", "level": 2, "icon": "simple-icons:dataverse" },
+        { "name": "SharePoint Online", "level": 2, "icon": "simple-icons:sharepoint" },
         { "name": "Microsoft Forms", "level": 2, "icon": "simple-icons:microsoftforms" }
       ]
     },

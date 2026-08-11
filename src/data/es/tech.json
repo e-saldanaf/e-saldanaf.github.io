@@ -1,7 +1,7 @@
 {
   "categories": [
     {
-      "title": "Ingeniería de Datos",
+      "title": "Data Engineering",
       "skills": [
         { "name": "Python", "level": 3, "icon": "simple-icons:python" },
         { "name": "Pandas", "level": 3, "icon": "simple-icons:pandas" },
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "title": "Nube y Almacenamiento",
+      "title": "Cloud & Storage",
       "skills": [
         { "name": "AWS Redshift", "level": 3, "icon": "simple-icons:amazonredshift" },
         { "name": "Amazon S3", "level": 3, "icon": "simple-icons:amazons3" },
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "title": "Bases de Datos",
+      "title": "Databases",
       "skills": [
         { "name": "SQL Server", "level": 3, "icon": "simple-icons:microsoftsqlserver" },
         { "name": "Elasticsearch", "level": 1, "icon": "simple-icons:elasticsearch" }
@@ -30,15 +30,15 @@
     {
       "title": "Power Platform",
       "skills": [
-        { "name": "Power Apps", "level": 3, "icon": "simple-icons:microsoftpowerapps" },
-        { "name": "Power Automate", "level": 3, "icon": "simple-icons:microsoftpowerautomate" },
-        { "name": "Dataverse", "level": 2, "icon": "simple-icons:microsoftdataverse" },
-        { "name": "SharePoint Online", "level": 2, "icon": "simple-icons:microsoftsharepoint" },
+        { "name": "Power Apps", "level": 3, "icon": "simple-icons:powerapps" },
+        { "name": "Power Automate", "level": 3, "icon": "simple-icons:powerautomate" },
+        { "name": "Dataverse", "level": 2, "icon": "simple-icons:dataverse" },
+        { "name": "SharePoint Online", "level": 2, "icon": "simple-icons:sharepoint" },
         { "name": "Microsoft Forms", "level": 2, "icon": "simple-icons:microsoftforms" }
       ]
     },
     {
-      "title": "DevOps y Calidad",
+      "title": "DevOps & Quality",
       "skills": [
         { "name": "Azure DevOps", "level": 2, "icon": "simple-icons:azuredevops" },
         { "name": "Jenkins", "level": 1, "icon": "simple-icons:jenkins" },
@@ -49,14 +49,14 @@
       ]
     },
     {
-      "title": "Metodologia",
+      "title": "Methodology",
       "skills": [
         { "name": "Scrum", "level": 3, "icon": "simple-icons:scrumalliance" },
         { "name": "Jira", "level": 2, "icon": "simple-icons:jira" }
       ]
     },
     {
-      "title": "Aprendiendo actualmente",
+      "title": "Currently Learning",
       "skills": [
         { "name": "Databricks", "level": 1, "icon": "simple-icons:databricks" },
         { "name": "PowerBI", "level": 1, "icon": "simple-icons:powerbi" }
