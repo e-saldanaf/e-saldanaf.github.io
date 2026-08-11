@@ -1,63 +1,65 @@
 {
   "categories": [
     {
-      "title": "Data Engineering",
+      "title": "Ingeniería de Datos",
       "skills": [
-        { "name": "Python", "level": 3, "icon": "devicon-plain:python" },
-        { "name": "Pandas", "level": 3, "icon": "devicon-plain:pandas" },
-        { "name": "SQL", "level": 3, "icon": "devicon-plain:mysql" },
-        { "name": "Apache Airflow", "level": 2, "icon": "devicon-plain:apacheairflow" },
-        { "name": "BeautifulSoup", "level": 2, "icon": "devicon-plain:python" }
+        { "name": "Python", "level": 3, "icon": "simple-icons:python" },
+        { "name": "Pandas", "level": 3, "icon": "simple-icons:pandas" },
+        { "name": "SQL", "level": 3, "icon": "simple-icons:mysql" },
+        { "name": "dbt", "level": 1, "icon": "simple-icons:dbt" },
+        { "name": "Apache Airflow", "level": 2, "icon": "simple-icons:apacheairflow" },
+        { "name": "BeautifulSoup", "level": 2, "icon": "simple-icons:python" }
       ]
     },
     {
-      "title": "Cloud & Storage",
+      "title": "Nube y Almacenamiento",
       "skills": [
-        { "name": "AWS Redshift", "level": 3, "icon": "devicon-plain:amazonwebservices" },
-        { "name": "Amazon S3", "level": 3, "icon": "devicon-plain:amazonwebservices" },
-        { "name": "AWS Secrets Manager", "level": 2, "icon": "devicon-plain:amazonwebservices" },
-        { "name": "PostgreSQL", "level": 3, "icon": "devicon-plain:postgresql" }
+        { "name": "AWS Redshift", "level": 3, "icon": "simple-icons:amazonredshift" },
+        { "name": "Amazon S3", "level": 3, "icon": "simple-icons:amazons3" },
+        { "name": "AWS Secrets Manager", "level": 2, "icon": "simple-icons:awssecretsmanager" },
+        { "name": "PostgreSQL", "level": 3, "icon": "simple-icons:postgresql" }
       ]
     },
     {
-      "title": "Databases",
+      "title": "Bases de Datos",
       "skills": [
-        { "name": "SQL Server", "level": 3, "icon": "devicon-plain:microsoftsqlserver" },
-        { "name": "Elasticsearch", "level": 1, "icon": "devicon-plain:elasticsearch" }
+        { "name": "SQL Server", "level": 3, "icon": "simple-icons:microsoftsqlserver" },
+        { "name": "Elasticsearch", "level": 1, "icon": "simple-icons:elasticsearch" }
       ]
     },
     {
       "title": "Power Platform",
       "skills": [
-        { "name": "Power Apps", "level": 3, "icon": "mdi:microsoft" },
-        { "name": "Power Automate", "level": 3, "icon": "mdi:microsoft" },
-        { "name": "Dataverse", "level": 2, "icon": "mdi:microsoft" },
-        { "name": "SharePoint Online", "level": 2, "icon": "mdi:microsoft-sharepoint" },
-        { "name": "Microsoft Forms", "level": 2, "icon": "mdi:microsoft" }
+        { "name": "Power Apps", "level": 3, "icon": "simple-icons:microsoftpowerapps" },
+        { "name": "Power Automate", "level": 3, "icon": "simple-icons:microsoftpowerautomate" },
+        { "name": "Dataverse", "level": 2, "icon": "simple-icons:microsoftdataverse" },
+        { "name": "SharePoint Online", "level": 2, "icon": "simple-icons:microsoftsharepoint" },
+        { "name": "Microsoft Forms", "level": 2, "icon": "simple-icons:microsoftforms" }
       ]
     },
     {
-      "title": "DevOps & Quality",
+      "title": "DevOps y Calidad",
       "skills": [
-        { "name": "Azure DevOps", "level": 2, "icon": "devicon-plain:azure" },
-        { "name": "Jenkins", "level": 1, "icon": "devicon-plain:jenkins" },
-        { "name": "Git", "level": 3, "icon": "devicon-plain:git" },
-        { "name": "Docker", "level": 1, "icon": "devicon-plain:docker" },
-        { "name": "SonarQube", "level": 2, "icon": "mdi:shield-check" },
-        { "name": "TestRail", "level": 1, "icon": "mdi:test-tube" }
+        { "name": "Azure DevOps", "level": 2, "icon": "simple-icons:azuredevops" },
+        { "name": "Jenkins", "level": 1, "icon": "simple-icons:jenkins" },
+        { "name": "Git", "level": 3, "icon": "simple-icons:git" },
+        { "name": "Docker", "level": 1, "icon": "simple-icons:docker" },
+        { "name": "SonarQube", "level": 2, "icon": "simple-icons:sonarqube" },
+        { "name": "TestRail", "level": 1, "icon": "simple-icons:testrail" }
       ]
     },
     {
-      "title": "Methodology",
+      "title": "Metodologia",
       "skills": [
-        { "name": "Scrum", "level": 3, "icon": "mdi:account-group" },
-        { "name": "Jira", "level": 2, "icon": "devicon-plain:jira" }
+        { "name": "Scrum", "level": 3, "icon": "simple-icons:scrumalliance" },
+        { "name": "Jira", "level": 2, "icon": "simple-icons:jira" }
       ]
     },
     {
-      "title": "Currently Learning",
+      "title": "Aprendiendo actualmente",
       "skills": [
-        { "name": "dbt", "level": 1, "icon": "mdi:database-cog" }
+        { "name": "Databricks", "level": 1, "icon": "simple-icons:databricks" },
+        { "name": "PowerBI", "level": 1, "icon": "simple-icons:powerbi" }
       ]
     }
   ]
