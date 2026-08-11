@@ -34,7 +34,7 @@
         { "name": "Power Automate", "level": 3, "icon": "simple-icons:powerautomate" },
         { "name": "Dataverse", "level": 2, "icon": "simple-icons:dataverse" },
         { "name": "SharePoint Online", "level": 2, "icon": "simple-icons:microsoftsharepoint" },
-        { "name": "Microsoft Forms", "level": 2, "icon": "mdi:microsoft-forms" }
+        { "name": "Microsoft Forms", "level": 2, "icon": "mdi:microsoft-office" }
       ]
     },
     {
