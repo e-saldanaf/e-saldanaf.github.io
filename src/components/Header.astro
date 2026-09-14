@@ -1,7 +1,6 @@
 ---
 import Container from "@components/Container.astro";
 import Link from "@components/Link.astro";
-import { SITE } from "@consts";
 import { getLangFromUrl, useTranslations, getLocalePath } from "@i18n/translations";
 
 const lang = getLangFromUrl(Astro.url);
@@ -25,9 +24,23 @@ if (lang === "en") {
   <Container>
     <div class="flex flex-wrap justify-between gap-y-2">
       <Link href={getLocalePath(lang, "/")} underline={false}>
-        <div class="font-semibold">
-          {SITE.TITLE}
-        </div>
+        <span class="sr-only">
+          Eduardo Saldaña — {lang === "es" ? "Inicio" : "Home"}
+        </span>
+        <img
+          src="/brand/logo-dark.png"
+          alt=""
+          width="2172"
+          height="724"
+          class="brand-logo brand-logo-dark"
+        />
+        <img
+          src="/brand/logo-light.png"
+          alt=""
+          width="2172"
+          height="724"
+          class="brand-logo brand-logo-light"
+        />
       </Link>
       <nav class="flex items-center gap-1 text-sm">
         <Link href={getLocalePath(lang, "/blog")}>{t("nav.blog")}</Link>
@@ -66,3 +79,27 @@ if (lang === "en") {
     </div>
   </Container>
 </header>
+
+<style>
+  .brand-logo {
+    width: 12rem;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .brand-logo-dark {
+    display: block;
+  }
+
+  .brand-logo-light {
+    display: none;
+  }
+
+  :global(html[data-theme$="-light"]) .brand-logo-dark {
+    display: none;
+  }
+
+  :global(html[data-theme$="-light"]) .brand-logo-light {
+    display: block;
+  }
+</style>
