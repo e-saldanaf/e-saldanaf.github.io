@@ -45,8 +45,16 @@ const localData = lang === 'es'
 
       <div class="contact-footer opacity-0 pt-20 border-t border-white/5">
         <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p class="text-subtext text-sm font-body order-2 md:order-1 flex items-center gap-3">
-			<span>{localData.name} © 2026</span>
+          <p class="text-subtext text-sm font-body order-2 md:order-1 flex flex-wrap justify-center items-center gap-x-3 gap-y-1">
+            <a
+              href={lang === 'es' ? '/es/' : '/'}
+              class="inline-flex items-center gap-1 rounded-sm hover:text-accent transition-colors focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4"
+              aria-label={lang === 'es' ? 'Eduardo Saldaña — Inicio' : 'Eduardo Saldaña — Home'}
+            >
+              <img src="/brand/logo-mark.png" alt="" width="1280" height="1280" class="w-8 h-8 shrink-0" loading="lazy" />
+              <span>{localData.name}</span>
+            </a>
+            <span>© {new Date().getFullYear()}</span>
 			
 				<a href={lang === 'es' ? '/es/legal' : '/legal'}
 				class="hover:text-accent transition-colors underline decoration-white/30 underline-offset-4 hover:decoration-accent"

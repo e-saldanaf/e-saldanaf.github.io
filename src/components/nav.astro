@@ -39,7 +39,17 @@ const navItems: NavItem[] = [
     icon: `mdi:message`,
   }
 ];
+const isSpanish = Astro.url.pathname.startsWith('/es');
 ---
+<a
+  href={isSpanish ? '/es/' : '/'}
+  class="header-brand"
+  aria-label={isSpanish ? 'Eduardo Saldaña — Inicio' : 'Eduardo Saldaña — Home'}
+>
+  <img src="/brand/logo-dark.png" alt="" width="2172" height="724" class="brand-horizontal brand-dark" />
+  <img src="/brand/logo-light.png" alt="" width="2172" height="724" class="brand-horizontal brand-light" />
+  <img src="/brand/logo-mark.png" alt="" width="1280" height="1280" class="brand-compact" />
+</a>
 <div id="theme-toggle-wrapper" class="fixed top-4 right-4 z-50 md:top-4 md:right-4 reveal-content flex items-center gap-2" style="animation-delay: 700ms;">
   <a
     href={Astro.url.pathname.startsWith('/es') ? Astro.url.pathname.replace(/^\/es/, '') || '/' : `/es${Astro.url.pathname}`}
@@ -105,6 +115,64 @@ const navItems: NavItem[] = [
 </div>
 
 <style>
+  .header-brand {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    z-index: 30;
+    display: block;
+    width: min(11rem, calc(100vw - 10rem));
+    border-radius: 0.5rem;
+  }
+
+  .header-brand:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+  }
+
+  .brand-horizontal {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .brand-light,
+  .brand-compact {
+    display: none;
+  }
+
+  :global(html[data-theme$="-light"]) .brand-dark {
+    display: none;
+  }
+
+  :global(html[data-theme$="-light"]) .brand-light {
+    display: block;
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .header-brand {
+      width: 3.5rem;
+      top: 1rem;
+    }
+
+    .header-brand .brand-horizontal,
+    :global(html[data-theme$="-light"]) .brand-light {
+      display: none;
+    }
+
+    .brand-compact {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .header-brand {
+      width: 13.5rem;
+    }
+  }
+
     /* Reveal whole section when website loads */
   .reveal-content {
     opacity: 0;
