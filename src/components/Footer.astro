@@ -1,6 +1,5 @@
 ---
 import Container from "@components/Container.astro";
-import { SITE } from "@consts";
 import BackToTop from "@components/BackToTop.astro";
 ---
 
@@ -13,7 +12,7 @@ import BackToTop from "@components/BackToTop.astro";
     </div>
     <div class="flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <span>&copy; {new Date().getFullYear()} • {SITE.TITLE}</span>
+        <span class="text-sm">&copy; {new Date().getFullYear()} • Eduardo Saldaña</span>
         
         <a 
           href="/legal"
