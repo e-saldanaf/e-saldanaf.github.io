@@ -3,8 +3,9 @@
     "company": "SDG Group España",
     "role": "Data Engineer Consultant",
     "period": "Sep 2026 - Present",
-    "description": "Contributing to data engineering projects and building and evolving data-driven solutions.",
-    "skills": []
+    "type": "Full time · Remote",
+    "description": "Contributing to the development and maintenance of data engineering solutions for Iberia within the Business Intelligence Operations squad. Building and optimizing ETL/ELT pipelines with Apache Airflow, Amazon Redshift and dbt; integrating sources via SFTP into Amazon S3 and Redshift; developing SQL models with dbt; migrating processes to new architectures; and resolving incidents to ensure data integrity and reliability.",
+    "skills": ["Python", "SQL", "Apache Airflow", "Amazon Redshift", "dbt", "AWS S3", "Docker", "Git"]
   },
   {
     "company": "G.team (for Vueling Airlines)",
